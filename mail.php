@@ -4,13 +4,15 @@
     $email= $_POST["email"];
     $text= $_POST["message"];
     $phone= $_POST["phone"];
+    $db='mail'
 
+$db=new mysqli('localhost',$to,$firstname,$email,$text,$phone) or die("Unable to connect");
 
+echo"Great Work with your information";
 
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-
     $message ='<table style="width:100%">
         <tr>
             <td>'.$firstname.'  '.$laststname.'</td>
