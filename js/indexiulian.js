@@ -10,6 +10,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     if(user != null){
 
       var email_id = user.email;
+	  
+
+
 	  var email_verified = user.emailVerified;
 	  
 	  if(email_verified)
