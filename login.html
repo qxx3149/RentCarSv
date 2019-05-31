@@ -12,17 +12,17 @@
     <input type="password" placeholder="Password..." id="password_field" />
 
     <button onclick="login()">Login to Account</button>
-	 <p style="color:white;"><b>Do not have an account? Create one by typing your email and password and clicking Create a new account!</b></p>
+	 <p><b>Do not have an account? Create one by typing your email and password and clicking Create a new account!</b></p>
 	<button onclick="create_account()">Create a new Account</button>
-	 <p style="color:white;"><b>Lost Password? Insert email and click on Password reset!</b></p>
+	 <p><b>Lost Password? Insert email and click on Password reset!</b></p>
 	<button onclick="reset_password()"> Password reset</button>
   </div>
 
   <div id="user_div" class="loggedin-div">
-    <h3>Welcome User</h3>
-    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+   
+    <p style="color:red;" id="user_para">Welcome to RentaCarSV. You're currently logged in.</p>
     <button onclick="logout()">Logout</button>
-	<button id="verify_btn" onclick="send_verification()">Send Verification</button>
+	<button id="verify_btn" onclick="send_verification()">Send Email Verification</button>
   </div>
 
 
