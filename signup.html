@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Rent a car</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+ 
+  	<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/elements/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Car Rentals</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/styleiulian.css">
+</head>
+<body>
+    	<header id="header">
+				<div class="container">
+					<div class="row align-items-center justify-content-between d-flex">
+						<div id="logo">
+							<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+						</div>
+						<nav id="nav-menu-container">
+							<ul class="nav-menu">
+								<li class="menu-active"><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="cars.html">Cars</a></li>
+								<li><a href="service.html">Service</a></li>
+								<li><a href="team.html">Team</a></li>
+								<li><a href="contact.html">Contact</a></li>
+						<li><a href="login.html">Login</a></li>
+							</ul>
+						</nav><!-- #nav-menu-container -->
+					</div>
+				</div>
+			</header><!-- #header -->
+
+		<!-- start banner Area -->
+		<section class="banner-area relative" id="home">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row d-flex align-items-center justify-content-center">
+					<div class="about-content col-lg-12">
+						<h1 class="text-white">
+							Cars
+						</h1>
+						<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="login.html"> Login</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+<div class="container-fluid">
+<div class="row" style="background-color:#212F3C;">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+		
+		<h1 align="center" style="color:red;"><b>Creare cont nou></h1>
+  <div id="login_div" class="main-div">
+        <p><b>Nu ai un cont? Crează-ți unul introducând email-ul și parola, apoi dând click pe Înregistrare</b></p>
+		<label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Introdu Email-ul" id="email_field"  name="uname" required>
+		<label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Introdu parola" id="password_field" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Trebuie să conțină minim un număr, o literă mare, una mică și să aibă minim 8 caractere" required>
+	<button onclick="create_account()">Înregistrare</button>
+    <br><a href="login.html">Înapoi la pagina de conectare</a>
+  </div>
+  <div id="user_div" class="loggedin-div">
+    <p style="color:red;" id="user_para">Welcome to RentaCarSV. You're currently logged in.</p>
+    <button onclick="logout()">Deconectează-te</button>
+	<button id="verify_btn" onclick="send_verification()">Trimite email de verificare</button>
+  </div>
+
+  <div id="message">
+        <h3>Parola trebuie să conțină:</h3>
+        <p id="letter" class="invalid">O <b>literă </b> mică</p>
+        <p id="capital" class="invalid">O <b>literă</b> mare</p>
+        <p id="number" class="invalid">Un <b>număr</b></p>
+        <p id="length" class="invalid">Minim <b>8 caractere</b></p>
+       </div>
+ </div>
+  <div class="col-md-3">
+		</div>
+
+ </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+     const firebaseConfig = {
+  apiKey: "AIzaSyBp8GCNXWM2QgTwx8uow8nHdYOVTFyHOjY",
+  authDomain: "fir-web-login-ccdcf.firebaseapp.com",
+  databaseURL: "https://fir-web-login-ccdcf.firebaseio.com",
+  projectId: "fir-web-login-ccdcf",
+  storageBucket: "fir-web-login-ccdcf.appspot.com",
+  messagingSenderId: "822495582851",
+  appId: "1:822495582851:web:605eb60e51808ac4"
+};
+    
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="js/indexiulian.js"></script>
+  
+	
+</div>
+
+    
+
+</body>
+</html>
