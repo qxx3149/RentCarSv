@@ -68,6 +68,7 @@
 			</div>
 		</section>
 <div class="container-fluid">
+<<<<<<< HEAD
 <div class="row" style="background-color:#212F3C;">
 		<div class="col-md-3">
 		</div>
@@ -101,6 +102,33 @@
 		</div>
 
  </div>
+=======
+		<h1 align="center" style="color:red;"><b>Log in to rent a car!</b></h1>
+  <div id="login_div" class="main-div">
+        <p><b>Do not have an account? Create one by typing your email and password and clicking Create a new account!</b></p>
+		<label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" id="email_field"  name="uname" required>
+		<label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="password_field" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+	<button onclick="create_account()">Create a new Account</button>
+    <br><a href="login.html">Back to login page</a>
+  </div>
+  <div id="user_div" class="loggedin-div">
+    <p style="color:red;" id="user_para">Welcome to RentaCarSV. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+	<button id="verify_btn" onclick="send_verification()">Send Email Verification</button>
+  </div>
+
+  <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+                      
+     
+>>>>>>> 7234b1ec95e85b8b058968ef13a88a169c10a033
 
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script>
