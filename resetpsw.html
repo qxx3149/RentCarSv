@@ -1,6 +1,6 @@
 <html>
 <head>
- 
+  <title>Login Rent a car</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
  
   	<!-- Mobile Specific Meta -->
@@ -32,8 +32,8 @@
 			<link rel="stylesheet" href="css/styleiulian.css">
 </head>
 <body>
-		<header id="header" id="home">
-				<div class="container" >
+    	<header id="header" id="home">
+				<div class="container">
 					<div class="row align-items-center justify-content-between d-flex">
 						<div id="logo">
 							<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
@@ -68,37 +68,29 @@
 			</div>
 		</section>
 <div class="container-fluid">
-		
-		<div class="row" style="background-color:#212F3C;">
+
+<div class="row" style="background-color:#212F3C;">
 		<div class="col-md-3">
-		</div>
-		<div class="col-md-6" >
 		
-		<h1 align="center" style="color:red;"><b>Conectează-te la contul tău!</b></h1>
-	
+		</div>
+		<div class="col-md-6">
+		<h1 align="center" style="color:red;"><b>Resetează-ți parola!</b></h1>
+		
   <div id="login_div" class="main-div">
 		<label for="uname"><b>Email</b></label>
-    <input type="text" placeholder="Introdu email-ul" id="email_field"  name="uname" required>
-		<label for="psw"><b>Parolă</b></label>
-    <input type="password" placeholder="Introdu parola" id="password_field" name="psw" required>
-		<button onclick="login()">Conectează-te</button>
-		<span class="psw"><a href="resetpsw.html">Ai uitat parola?</a></span>
-		
-		<h4 align="center">SAU<br><a href="signup.html">Înregistrează-te!</a></h4>
-	
+    <input type="text" placeholder="Introdu Email-ul" id="email_field"  name="uname" required>
+	 <p><b>Ai pierdut parola? Introdu email-ul și dă click pe Resetează parola!</b></p>
+    <button onclick="reset_password()"> Resetează parola</button>
+   <br><a href="login.html">Înapoi la pagina de conectare</a>
   </div>
-
-  <div id="user_div" class="loggedin-div">
-   
-    <p style="color:red;" id="user_para">Welcome to RentaCarSV. You're currently logged in.</p>
-    <button onclick="logout()">Deconectează-te</button>
-	<button id="verify_btn" onclick="send_verification()">Trimite email de verificare</button>
- </div>
  </div>
   <div class="col-md-3">
 		</div>
 
  </div>
+  
+
+
 
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script>
@@ -117,9 +109,9 @@
   </script>
   <script src="js/indexiulian.js"></script>
 		
-
-	</div>
-
+		
+	
+</div>
 
     
 
