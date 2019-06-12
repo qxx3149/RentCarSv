@@ -19,3 +19,10 @@ De obicei furnizorul de informații își grupează și organizează paginile î
 Prin acest proiect, ne propunem sa realizam un proiect bazat pe o pagina web, in care sa folosim cunoștințele
 dobândite in cadrul laboratorului de „Tehnologii web avansate si arhitecturi orientate pe servicii”.
 
+
+•	Partea de Login in platforma a fost dezvoltata de Ivascu Iulian. Totodată Iulian a dezvoltat si partea de securitate a paginii web, făcând testele necesare. 
+•	Partea de Alegere a mașinii a fost creata de Cornici Vlad. Responsiv-ul acestei pagini web a fost implementat tot de el. 
+•	Pagina de rezervări cu specificațiile ei a fost creata de Lupu Emilian. Pe de alta parte, relatia dintre fisiere a fost creata tot de Lupu.  
+•	Pagina de Contact a fost creata de Parasca Alexandru. In același timp el s-a ocupat de crearea brance-urilor si introducerea informației pe brance-ului master.
+
+
